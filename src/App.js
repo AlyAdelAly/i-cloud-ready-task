@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Home from './pages/Home';
+import ContextProvider from './context/CartContext';
+import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
+import CustomerEngagement from './pages/CustomerEngagement';
+import ActionableInsights from './pages/ActionableInsights';
+import EmployeesProductivity from './pages/EmployeesProductivity';
+import OperationsExcellence from './pages/OperationsExcellence';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ContextProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/customerEngagement' element={<CustomerEngagement />} />
+          <Route path='/employeesProductivity' element={<EmployeesProductivity />} />
+          <Route path='/operationsExcellence' element={<OperationsExcellence />} />
+          <Route path='/actionableInsights' element={<ActionableInsights />} />
+        </Routes>
+        <div className="fixed bottom-0 w-full">
+                <Footer />
+            </div>
+      </ContextProvider>
+    </>
   );
 }
 
