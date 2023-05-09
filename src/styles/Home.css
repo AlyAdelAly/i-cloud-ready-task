@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 700px) {
+    .container_home {
+        overflow-y: scroll;
+    }
+}
+
+.backgroundBlue {
+    position: absolute;
+    top: -33%;
+    left: 60%;
+    z-index: -9999999 ;
+    width: 559.09px;
+    height: 1084.18px;
+    background: linear-gradient(283.59deg, #00244D 26.1%, #1769C6 170.66%);
+    transform: rotate(35deg);
+}
+
+.Support {
+    color: #0097C2;
+}
+
+#Customer_Card
+{
+    background-color: #0A488F;
+}
+#Actionable_Card
+{
+    background-color: #579064;
+}
+#Employees_Card
+{
+    background-color: #950000;
+}
+#Operations_Card
+{
+    background-color: #8F6C0A;
+}

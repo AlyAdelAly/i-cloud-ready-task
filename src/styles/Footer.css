@@ -1,0 +1,13 @@
+.footer
+{
+    z-index: 999 ;
+}
+.blueRec{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width:  40px ;
+    height: 150px ;
+    background-color: #0097C2 ;
+    z-index: 9999;
+}
